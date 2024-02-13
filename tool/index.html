@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=false"
+    />
+    <title></title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- jquery UI -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="grid grid-cols-[20vw_50vw_28vw] h-[100vh]">
+      <section id="selectors">
+        <div class="flex flex-col" id="dimention_selectors"></div>
+        <label for="">Date</label>
+        <div id="dates"></div>
+        <div>
+          <label for="" id="date_start"></label>
+          <span> TO </span>
+          <label for="" id="date_end"></label>
+          <div id="slider-range" class="mx-3"></div>
+        </div>
+      </section>
+
+      <main
+        class="grid grid-rows-[100px_100px_30px_auto] items-center justify-center mx-12 gap-2 mt-6"
+      >
+        <section id="table1"></section>
+        <section id="table2"></section>
+        <section id="dispersion"   > </section>
+
+        <section
+          class="mx-10 my-2 w-[50vw] h-[70vh] grid justify-center"
+          id="chart"
+        ></section>
+      </main>
+
+      <section id="line" class="grid grid-rows-[5vh_60vh_35vh]">
+        <div class="mt-5 mx-auto" id="parallel_selectors"></div>
+        <div id="parallel"></div>
+        <div id="line_chart"></div>
+      </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
